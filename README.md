@@ -99,3 +99,12 @@ Example `manifest.json`:
 
 - **`priority`**: Guarantees files load in order (e.g. Backend loads before Database).
 - **`adds/removes`**: The CLI engine utilizes this metadata to reverse-engineer and surgically prune prior variables out of configuration files during `forge migrate` cycles.
+
+---
+
+## 🗺️ Roadmap / TODOs
+
+- [ ] **Remote Plugin Ecosystem (`forge plugin install`)**: Allow developers to install community-built architecture templates from GitHub repositories directly into their global CLI prompts.
+- [ ] **Strict Template Validation (Zod)**: Implement runtime schema validation for `manifest.json` files to provide helpful, colorized error messages to template authors.
+- [ ] **Automated Test Suite (Jest / Vitest)**: Write robust unit tests verifying the exact deterministic outputs of the JSON merge engine and the un-merge regex parser.
+- [ ] **Custom File Overrides (`.forge/overrides`)**: Allow developers to locally customize core templates without altering the global package files.
