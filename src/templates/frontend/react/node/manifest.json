@@ -3,9 +3,16 @@
   "type": "frontend",
   "language": "node",
   "priority": 10,
+  "scripts": {
+    "postInstall": "cd apps/frontend && npm install",
+    "run": "cd apps/frontend && npm run dev"
+  },
   "files": {
     "copy": [
       "apps/frontend/package.json",
+      "apps/frontend/vite.config.js",
+      "apps/frontend/index.html",
+      "apps/frontend/src/main.tsx",
       "apps/frontend/src/App.tsx"
     ]
   }

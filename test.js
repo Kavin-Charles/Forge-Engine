@@ -5,8 +5,8 @@ const { executePostInstallScripts } = require('./dist/core/scriptEngine');
 const mockConfig = {
   projectName: "ksvin",
   projectType: "fullstack",
-  frontend: "nextjs",
-  backend: "fastapi",
+  frontend: "react",
+  backend: "fiber",
   database: "postgres",
   cache: "redis",
   dockerSupport: true

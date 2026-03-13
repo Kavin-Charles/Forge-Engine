@@ -3,6 +3,10 @@
   "type": "backend",
   "language": "go",
   "priority": 20,
+  "scripts": {
+    "postInstall": "cd apps/backend && go mod tidy",
+    "run": "cd apps/backend && go run server/main.go"
+  },
   "files": {
     "copy": [
       "apps/backend/go.mod",
