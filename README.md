@@ -104,7 +104,4 @@ Example `manifest.json`:
 
 ## 🗺️ Roadmap / TODOs
 
-- [ ] **Remote Plugin Ecosystem (`forge plugin install`)**: Allow developers to install community-built architecture templates from GitHub repositories directly into their global CLI prompts.
-- [ ] **Strict Template Validation (Zod)**: Implement runtime schema validation for `manifest.json` files to provide helpful, colorized error messages to template authors.
-- [ ] **Automated Test Suite (Jest / Vitest)**: Write robust unit tests verifying the exact deterministic outputs of the JSON merge engine and the un-merge regex parser.
-- [ ] **Custom File Overrides (`.forge/overrides`)**: Allow developers to locally customize core templates without altering the global package files.
+- [ ] **Forge Stack Links (`forge.dev/s/...`)**: Enable developers to share an entire tech stack architecture with a single link. Instead of writing verbose README instructions like "Install React, Fiber, MongoDB, Redis, Docker", a developer simply provides `forge.dev/s/abc123` and `forge-gen` instantly downloads and boots the exact multi-language architecture globally!
